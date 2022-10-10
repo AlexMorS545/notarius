@@ -1,0 +1,22 @@
+@import "variables";
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border: 1px solid $additional-color;
+        padding: 15px;
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+}

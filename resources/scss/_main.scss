@@ -1,0 +1,50 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: $text-color;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content {
+    width: 100%;
+
+    &__items-wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        &-item {
+            width: calc(50% - 20px);
+        }
+    }
+}
+
+.heading {
+    font-weight: 500;
+
+    &__wrap {
+        padding: 30px 0;
+    }
+
+    &__1 {
+        font-size: 3rem;
+    }
+    &__2 {
+        font-size: 2rem;
+    }
+    &__3 {
+        font-size: 1.5rem;
+    }
+}

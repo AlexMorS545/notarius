@@ -1,0 +1,61 @@
+@import "variables";
+
+form {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    .field_wrap {
+        width: 100%;
+        margin-bottom: 30px;
+
+        &__alert-input {
+            color: $alert-color;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 15px;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid $additional-color;
+        background-color: #ffffff;
+
+        &::placeholder {
+            font-size: 16px;
+        }
+    }
+    input.dp__pointer {
+        width: 100%;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid $additional-color;
+        background-color: #ffffff;
+        padding: 15px 15px 15px 40px;
+    }
+    select option {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 15px 40px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        background-color: $accent-color;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: .2s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $accent-dark-color;
+            color: #ffffff;
+        }
+    }
+}
